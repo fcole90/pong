@@ -218,7 +218,9 @@ int main(int argc, char *argv[])
 
     endwin(); /* close ncurses window */
 
+    system("xset r rate"); /* restore keyboard typematic delay to default */
     restore_key_rate(); /* restore keyboard settings */
+    
 
     return 0;
 }
